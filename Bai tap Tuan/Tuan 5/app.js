@@ -1,43 +1,27 @@
-const products = document.querySelector('.products')
-const filter = document.getElementById('filter')
-const listItems = []
+let elToShow = document.querySelectorAll('.show-on-scroll')
 
-getData()
-
-filter.addEventListener('input', (e) => filterData(e.target.value))
-
-async function getData() {
-	const res = await fetch('https://fakestoreapi.com/products')
-
-	const results = await res.json()
-
-	// Clear products
-	products.innerHTML = ''
-
-	results.forEach((product) => {
-		const div = document.createElement('div')
-		div.setAttribute('class', 'product')
-		listItems.push(div)
-
-		div.innerHTML = `
-			<img src="${product.image}" alt="">
-			<div class="product-detail">
-				<h4>${product.title.slice(0, 30)}</h4>
-				<p>$${product.price}</p>
-			</div>
-        `
-
-		products.appendChild(div)
-	})
+let isElInViewPort = (el) => {
+	let rect = el.getBoundingClientRect()
+	// some browsers support innerHeight, others support documentElement.clientHeight
+	let viewHeight = window.innerHeight || document.documentElement.clientHeight
+	return (
+		(rect.top <= 0 && rect.bottom >= 0) ||
+		(rect.bottom >= viewHeight && rect.top <= viewHeight) ||
+		(rect.top >= 0 && rect.bottom <= viewHeight)
+	)
 }
 
-function filterData(search) {
+function loop() {
 
-	listItems.forEach((item) => {
-		if (item.innerText.toLowerCase().includes(search.toLowerCase())) {
-			item.classList.remove('hide')
+	elToShow.forEach((item) => {
+		if (isElInViewPort(item)) {
+			item.classList.add('active')
 		} else {
-			item.classList.add('hide')
+			item.classList.remove('active')
 		}
 	})
 }
+
+window.onscroll = loop;
+loop()
+
