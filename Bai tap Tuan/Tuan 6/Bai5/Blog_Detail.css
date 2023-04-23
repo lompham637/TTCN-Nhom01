@@ -1,0 +1,96 @@
+.Statistics_img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 36px;
+    border-radius: 10px;
+}
+
+.col2{
+    margin-top:0;
+    margin-right: 0!important;
+}
+.col1>div:not(:first-child){
+    margin-top:90px;
+}
+.col1{
+    margin-top:28px;
+}
+.avatar,
+.avatar img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.status h2{
+    margin-bottom: 20px;
+}
+.status_list i{
+    color: black;
+    padding: 2px;
+    font-size: 10px;
+    background-color: rgb(22,207,22);
+    border-radius: 50%;
+}
+.Social{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.Social a{
+    margin: 10px;
+    min-width:20px;
+    text-align: center;
+    color: rgba(173, 161, 161, 0.7);
+    padding: 15px;
+    background-color: rgb(44,48,64);
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+.comment{
+    display: flex;
+    margin-top:40px;
+}
+.comment_text h4{
+    margin-top:0;
+}
+.comment img{
+    margin-right: 20px;
+    width: 100px;
+    height:100px;
+    flex-shrink: 0;
+}
+.in4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.in4 input{
+    margin-top: 24px;
+    min-width:42%;
+    padding: 20px;
+    font-size:16px;
+    border-radius: 30px;
+    outline: none;
+    border:none;
+    background-color:rgb(32,37,54);
+    color:rgb(160, 157, 157);
+}
+.Leave_a_comment{
+    margin-top: 24px;
+    width: 100%;
+    font-size:16px;
+    box-sizing: border-box;
+    padding: 20px 20px 100px;
+    border-radius: 30px;
+    outline: none;
+    border:none;
+    background-color:rgb(32,37,54);
+    color:rgb(160, 157, 157);
+}
