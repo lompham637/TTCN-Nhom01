@@ -1,0 +1,49 @@
+.banner{
+    margin-top:90px;
+    background-color: #fff;
+    height: 200px;
+    background: url(https://images.unsplash.com/flagged/photo-1584036561584-b03c19da874c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80) center / cover no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+ul{
+    padding:0;
+}
+.banner p span {
+    color: rgb(13, 235, 13);
+    font-weight: 500;
+}
+.banner p{
+    margin-top:30px;
+}
+.News_Feed_cards{
+    margin: 90px 0;
+}
+.Blog_Girds_list{
+    display:flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    width: 280px!important;
+    height: 50px;
+    box-sizing: border-box
+}
+
+.Blog_Girds_list li a{
+    color: #fff;
+    min-width: 18px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(61, 73, 61) ;
+    transition: color 0.2s ease;
+}
+.active,
+.Blog_Girds_list li a:hover{
+    background-color: rgb(22,207,22);
+    border: 1px solid rgb(61, 73, 61);
+}
+
+

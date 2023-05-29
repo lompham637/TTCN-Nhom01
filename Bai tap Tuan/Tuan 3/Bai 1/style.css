@@ -1,0 +1,80 @@
+<<<<<<< HEAD
+body {
+    background: url(./Image/img.jpg);
+    background-size:auto ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+}
+#timer {
+    font-family: monospace;
+    font-size: 36px;
+    display: inline-block;
+    background-color: #222;
+    padding: 36px;
+    border-radius: 20px;
+}
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 24px;
+    font-size: 20px;
+    background-color: #002d59;
+    color: #ffff00;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #003971;
+}
+
+.button:active {
+    background-color: #014283;
+
+=======
+body {
+    background: url(./Image/img.jpg);
+    background-size:auto ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+}
+#timer {
+    font-family: monospace;
+    font-size: 36px;
+    display: inline-block;
+    background-color: #222;
+    padding: 36px;
+    border-radius: 20px;
+}
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 24px;
+    font-size: 20px;
+    background-color: #002d59;
+    color: #ffff00;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #003971;
+}
+
+.button:active {
+    background-color: #014283;
+
+>>>>>>> 91337aa95a0b3d0f6231828418a979f7b7a0101c
+}

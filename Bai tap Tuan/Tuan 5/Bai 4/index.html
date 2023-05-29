@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">k
+    <title>From khao sat</title>
+</head>
+<body>
+    <form>
+        <h2>Khảo sát</h2>
+        <p>Chúng tôi rất vui khi bạn dành chút thời gian để hoàn thành khảo sát dưới đây.</p>
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <div>
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="age">Tuổi:</label>
+            <input type="number" id="age" name="age" min="18" max="99" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Thông tin khảo sát</legend>
+          <div>
+            <label for="reason">Lý do của việc tham gia khảo sát:</label>
+            <textarea id="reason" name="reason" required></textarea>
+          </div>
+          <div>
+            <label for="rating">Đánh giá của bạn về sản phẩm:</label>
+            <select id="rating" name="rating" required>
+              <option value="">-- Vui lòng chọn một mức đánh giá --</option>
+              <option value="1">Rất tệ</option>
+              <option value="2">Tệ</option>
+              <option value="3">Bình thường</option>
+              <option value="4">Tốt</option>
+              <option value="5">Rất tốt</option>
+            </select>
+          </div>
+          <div>
+            <label>Đề xuất của bạn để cải thiện sản phẩm:</label>
+            <ul>
+              <li><input type="checkbox" id="more-colors" name="improvements" value="more-colors"><label for="more-colors">Thêm màu sắc</label></li>
+              <li><input type="checkbox" id="better-quality" name="improvements" value="better-quality"><label for="better-quality">Cải thiện chất lượng</label></li>
+              <li><input type="checkbox" id="lower-price" name="improvements" value="lower-price"><label for="lower-price">Giảm giá</label></li>
+            </ul>
+          </div>
+        </fieldset>
+        <button type="submit">Gửi</button>
+      </form>
+      <script src="main.js"></script>
+</body>
+</html>

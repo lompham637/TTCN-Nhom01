@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+body {
+  transition: all 0.2 linear;
+  background-color: rgb(7, 12, 31);
+  color: #fff;
+}
+#header {
+  height: 90px;
+  background-color: rgba(7, 12, 31, 0.99);
+  border-bottom: 1px solid rgba(110, 94, 94, 0.418);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 90;
+}
+.contai {
+  max-width: 1140px;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#header ul li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+.green-text {
+  color: rgb(22, 207, 22);
+}
+.comment a:hover,
+.post__title a:hover,
+.Category li:hover a,
+.fa-list-ul li:hover a,
+.sup_nav li a:hover,
+#header > .contai > ul > li > a:hover {
+  color: rgb(22, 207, 22);
+}
+#header .menu:hover .menu_list {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 70%;
+  background-color: #404c57e8;
+  z-index: -3;
+  padding: 10px;
+}
+.fa-list-ul {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(109, 108, 108);
+  transition: 0.2s linear;
+}
+#header > .contai > ul > li > a {
+  color: white;
+  margin: 0 12px;
+  transition: color 0.5s;
+}
+.sup_nav li:not(:first-child) {
+  border-top: 1px solid rgba(173, 161, 161, 0.7);
+}
+.sup_nav li {
+  color: black;
+  display: block;
+  width: 60%;
+  margin: 0 !important;
+  padding: 15px;
+  text-align: left;
+  transition: color 1s;
+}
+
+.sup_nav {
+  padding: 0 16px 0;
+  min-width: 160px;
+  max-width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 99;
+}
+.menu_list {
+  transition: 10s linear;
+}
+.menu_list,
+.menu,
+.sup_nav {
+  display: none;
+}
+.menu {
+}
+#header li:hover .sup_nav {
+  display: inline-block;
+}
+
+.btn,
+.comment a,
+.Category li a,
+.contacts-section a i,
+.test_covid .btn:hover,
+.phone {
+  transition: all 0.5s linear;
+}
+.btn:hover,
+.Covid_Spread_btn:hover,
+.symptoms_btn:hover,
+.about_text .about_btn:hover,
+.content_btn:hover,
+.phone:hover {
+  background-color: rgb(44, 48, 64);
+  color: #fff;
+}
+.phone {
+  padding: 16px 32px;
+  background-color: rgb(22, 207, 22);
+  border-radius: 30px;
+}
+.main {
+  max-width: 1140px;
+  margin: 90px auto;
+  width: 80vw;
+}
+.main .content {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .content h1 {
+  font-size: 66px;
+  margin-bottom: 36px;
+}
+.content_text {
+  width: 44%;
+}
+.btn {
+  display: inline-block;
+  background-color: rgb(22, 207, 22);
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.content_img {
+  margin-top: 32px;
+  width: 50%;
+  flex-shrink: 0;
+  position: relative;
+  animation: example 3s linear 2s infinite;
+}
+.text-gray {
+  margin: 20px 0;
+  color: rgb(160, 157, 157);
+  line-height: 1.5rem;
+}
+
+.contact p,
+.test_covid p,
+.News_Feed_text p,
+.content_item p,
+.Covid_Prevention_text p,
+.Covid_Spread_text p,
+.Covid_Spread_text p,
+.Covid_Threat_text,
+#symptoms .symptom,
+.symptoms_text p,
+.about_text p,
+.content_text p {
+  margin: 20px 0;
+  color: rgb(160, 157, 157);
+  line-height: 1.5rem;
+}
+.wrap,
+.count {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.count .card.card:not(:last-child)::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  top: 50%;
+  right: -50%;
+  position: absolute;
+  background-color: rgb(32, 37, 54);
+  z-index: -99;
+}
+.count .card {
+  background-color: rgb(32, 37, 54);
+  padding: 50px 16px;
+  text-align: center;
+  width: 20%;
+  margin-bottom: 36px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.count {
+  justify-content: space-between;
+}
+
+.count h1 {
+  color: rgb(22, 207, 22);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contacts,
+#Covid_Spread,
+#symptoms,
+#about {
+  display: flex;
+  justify-content: space-between;
+}
+.Covid_Threat_img img,
+.symptoms_img img,
+#about .about_img img {
+  position: relative;
+  animation: example 3s linear 2s infinite;
+  width: 100%;
+  object-fit: cover;
+}
+.Covid_Spread_cards,
+.Covid_Spread_text,
+.symptoms_img,
+#symptoms .symptom,
+#symptoms .symptoms_text,
+#about .about_img,
+#about .about_text {
+  width: 48%;
+}
+.id {
+  line-height: 12px !important;
+  color: rgb(22, 207, 22) !important;
+  display: inline-block;
+  padding: 8px 25px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+  background-color: rgb(32, 37, 54);
+}
+.fa-list-ul,
+.titles,
+.about_content {
+  font-size: 36px;
+}
+.Covid_Prevention_contens,
+.Covid_Spread_cards,
+#symptoms .symptoms_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon_space,
+.content_item img,
+.Covid_Spread_text div i,
+.symptom > i {
+  margin-right: 5px;
+}
+.test_covid,
+.News_Feed_text,
+#Covid_Prevention .Covid_Prevention_text,
+#Covid_Threat {
+  margin-top: 160px;
+  text-align: center;
+}
+.test_covid P,
+.News_Feed_text p,
+.Covid_Prevention_text,
+#Covid_Threat .Covid_Threat_text {
+  margin: 20px auto;
+  line-height: 1.7rem;
+  width: 72%;
+}
+.Covid_Spread_cards {
+  position: relative;
+  gap: 5% 5%;
+}
+.Covid_Spread_card {
+  width: 45%;
+  height: 50%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(26, 31, 49);
+  transition: 0.6s ease;
+}
+.Covid_Spread_card_img {
+  height: 80%;
+  border-radius: 40%;
+}
+.Covid_Spread_card_img img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.News_Feed_card_img:hover,
+.content_item_img:hover,
+.Covid_Spread_card:hover {
+  transform: rotate(3deg);
+}
+.News_Feed_cards,
+.Covid_Prevention_contens {
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.content_col {
+  width: 49%;
+}
+.col2 h2 > span {
+  color: rgb(233, 80, 48);
+}
+.col1 h2 > span {
+  color: rgb(22, 207, 22);
+}
+.content_item {
+  background-color: rgb(26, 31, 49);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  margin-top: 28px;
+}
+.content_item p {
+  margin: 8px 0 0;
+}
+.content_item_img {
+  background-color: rgb(26, 31, 49);
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+.News_Feed_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.News_Feed_card {
+  margin-top: 80px;
+  width: 30%;
+  color: #fafafa;
+  border-radius: 5px;
+}
+.News_Feed_card_img {
+  position: relative;
+  transition: 0.4s linear;
+}
+
+.News_Feed_card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 36px;
+  border-radius: 8px;
+}
+.Statistics_img .date-time,
+.News_Feed_card .date-time {
+  position: absolute;
+  background-color: rgb(22, 207, 22);
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+}
+.News_Feed_card h2 {
+  margin-bottom: 20px;
+  line-height: 2rem;
+}
+
+.test_covid .btn {
+  margin: 16px;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px 36px;
+  border: 1px solid rgb(22, 207, 22);
+  border-radius: 50px;
+}
+.menu:hover .fa-list-ul {
+  background-color: rgb(22, 207, 22);
+  color: #fff;
+}
+.test_covid .btn:hover {
+  background-color: rgb(22, 207, 22);
+  color: black;
+}
+.test_covid {
+  padding: 30px;
+  background-color: rgb(26, 31, 49);
+  border-radius: 8px;
+}
+.contact {
+  width: 33%;
+}
+.contact_link a {
+  color: rgb(122, 122, 122);
+  display: block;
+  margin-top: 20px;
+  transition: 0.2s linear;
+}
+.Follow_icon:not(:first-child),
+.contacts-section a:not(:first-child) {
+  margin-left: 10px;
+}
+.Read_More:hover,
+.banner a,
+.contact_link a:hover,
+#footer a:hover,
+.contacts-section a:hover i {
+  color: #ffffff;
+}
+.Follow_icon,
+.contacts-section a i {
+  width: 18px;
+  height: 18px;
+  color: rgb(122, 122, 122);
+  text-align: center;
+  padding: 8px;
+  background-color: rgb(26, 31, 49);
+  border-radius: 50%;
+}
+.contact_link h4::before {
+  content: "+";
+  color: rgb(22, 207, 22);
+  position: relative;
+  top: 50%;
+  left: -2%;
+  transform: translateY(-50%);
+}
+.contact_link h4 {
+  position: relative;
+}
+.contact_link {
+  width: 25%;
+}
+.contact_links {
+  display: flex;
+  flex: 1;
+  margin-left: 28px;
+}
+
+#footer {
+  height: 70px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #404c57;
+}
+#footer a {
+  color: #404c57;
+  transition: all 0.3s linear;
+}
+.top_space {
+  margin-top: 140px !important;
+}
+@keyframes example {
+  0% {
+    top: -20px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .main,
+  .contai {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: block;
+  }
+  .phone,
+  .nav {
+    display: none;
+  }
+  .contact_links {
+    margin-left: 0 !important;
+  }
+}
+
+.menu_list > li {
+  color: #fff;
+  display: block;
+}
+.menu_list > li:hover > a {
+  margin-left: 24px;
+  background-color: rgb(22, 207, 22);
+}
+.menu_list > li > a {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.2s linear;
+  border-radius: 50px;
+  width: 90%;
+  margin: 10px;
+}
+.menu_list > li > .sup_nav {
+  top: 72%;
+  left: 15%;
+}
+@media screen and (max-width: 1040px) {
+  .small {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .small_cards {
+    width: 47% !important;
+  }
+  .count .card.card:not(:last-child)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Covid_Spread_text {
+    margin-top: 990px !important;
+  }
+  .small {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .titles {
+    display: none;
+  }
+  .small_cards {
+    margin-top: 40px;
+    width: 100% !important;
+  }
+  .count .card.card:not(:last-child)::after {
+    display: none;
+  }
+}
