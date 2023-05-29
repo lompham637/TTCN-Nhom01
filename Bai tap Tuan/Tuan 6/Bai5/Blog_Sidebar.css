@@ -1,0 +1,135 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.col1{
+    width:66%;
+}
+.col2{
+    margin-top: 50px;
+    width:30%;
+}
+.Popular_Tags h3,
+.Follow h3,
+.Recent_Posts h3,
+.Category h3,
+.Search h3{
+    margin-bottom: 24px;
+    font-size:24px;
+}
+.Popular_Tags,
+.Follow,
+.Recent_Posts,
+.Category,
+.Search{
+    margin-top: 28px;
+    position: relative;
+    box-sizing: border-box;
+    padding:40px 20px;
+    background-color: rgb(26,31,49);
+    border-radius: 5px;
+}
+.tag,
+.col2 .Search input{
+    padding:15px 16px;
+    width:100%;
+    font-size: 16px;
+    background-color: rgb(58,63,78);
+    border-radius:30px;
+    border: none;
+    outline: none;
+    color:rgb(32,37,54);
+}
+.Search_input a{
+    position:absolute;
+    text-align: center;
+    right: 0%;
+    padding:15px;
+    color: #fff;
+    background-color:rgb(22,207,22);
+    border-radius: 50%;
+}
+.News_Feed_cards{
+    margin-top:0px!important;
+}
+.News_Feed_card{
+    width: 48%;
+}
+.Blog_Girds_list{
+    margin-left: 0px!important;
+}
+.Blog_Girds_list li{
+    margin: 10px;
+}
+.Follow .icons,
+.post{
+    display:flex;
+    margin-top: 20px;
+}
+.recent_posts_img img{
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius:5px;
+    margin-right: 10px;
+    background-color: rgb(47, 63, 63);
+}
+
+.Popular_Tag a
+{
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+    color: rgb(122, 122, 122);
+    transition: .2s linear;
+}
+.post p,
+.Category_list li {
+    margin-top: 16px;
+}
+.Search_input{
+    position: relative;
+    display:flex
+}
+.Category .fas{
+    margin-right: 10px;
+}
+.Category_list li a{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(122, 122, 122);
+}
+.Follow_icon a,
+.recent_posts_title{
+    color: #fff;
+    font-weight: 600;
+    transition: .2s linear;
+}
+.post p{
+    color:rgb(86, 91, 105);
+}
+.Follow_icon{
+    transition: .2s linear;
+    padding: 16px;
+    color: #fff;
+}
+.icon1{
+    background-color: rgb(36, 25, 138);
+}
+.icon2{
+    background-color: rgb(151, 44, 110);
+}
+.icon3{
+    background-color: rgb(212, 120, 44);
+}
+.icon4{
+    background-color: rgb(194, 18, 18);
+}
+.Social a:hover,
+.Popular_Tag a:hover,
+.Follow_icon:hover{
+    background-color:rgb(22,207,22);
+    color: #fff;
+}
